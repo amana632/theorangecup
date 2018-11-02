@@ -1,0 +1,21 @@
+HTTrack3.48-21 launched on Fri, 24 Aug 2018 10:00:53 at http://rhythm.bestlooker.pro/index-18.html
+(httrack http://rhythm.bestlooker.pro/index-18.html )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+10:00:54	Warning: 	Note: due to rhythm.bestlooker.pro remote robots.txt rules, links beginning with these path will be forbidden: /test/ (see in the options to disable this)
+10:09:55	Error: 	"Not Found" (404) at link rhythm.bestlooker.pro/Popover requires tooltip.js (from rhythm.bestlooker.pro/js/bootstrap.min.js)
+10:09:55	Error: 	"Not Found" (404) at link rhythm.bestlooker.pro/TweenLite.js (from rhythm.bestlooker.pro/rs-plugin/js/jquery.themepunch.tools.min.js)
+10:09:55	Error: 	"Not Found" (404) at link rhythm.bestlooker.pro/Version/ (from rhythm.bestlooker.pro/rs-plugin/js/jquery.themepunch.tools.min.js)
+10:17:25	Error: 	"Not Found" (404) at link rhythm.bestlooker.pro/css/font/ytp-regular.eot (from rhythm.bestlooker.pro/css/YTPlayer.css)
+10:17:42	Error: 	"Not Found" (404) at link rhythm.bestlooker.pro/specia-finance-2-portfolio.html (from rhythm.bestlooker.pro/special-finance-2.html)
+10:18:36	Error: 	"Not Found" (404) at link rhythm.bestlooker.pro/Facebook (from rhythm.bestlooker.pro/special-product-designer-contact.html)
+10:18:36	Error: 	"Not Found" (404) at link rhythm.bestlooker.pro/Twitter (from rhythm.bestlooker.pro/special-product-designer-contact.html)
+10:18:36	Error: 	"Not Found" (404) at link rhythm.bestlooker.pro/Linked In (from rhythm.bestlooker.pro/special-product-designer-contact.html)
+10:18:36	Error: 	"Not Found" (404) at link rhythm.bestlooker.pro/special-barbershop-2.html (from rhythm.bestlooker.pro/special-barbershop-gallery.html)
+
+HTTrack Website Copier/3.48-21 mirror complete in 18 minutes 0 seconds : 613 links scanned, 603 files written (39062172 bytes overall) [26867462 bytes received at 24877 bytes/sec], 14101172 bytes transferred using HTTP compression in 260 files, ratio 12%, 7.9 requests per connection
+(9 errors, 1 warnings, 0 messages)

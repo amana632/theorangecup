@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login/Signup Form With Slider</title>
+
+
+  <link rel='stylesheet' href='http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css'>
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body style="margin-top:6%;">
+
+  <div class="main-box">
+    <div class="slider-cont">
+      <div class="signup-slider">
+        <div class="img-txt">
+          <div class="img-layer"></div>
+          <h1>The hardest part of starting up is starting out for you.</h1>
+          <img src="https://static.pexels.com/photos/33972/pexels-photo.jpg" />
+        </div>
+        <div class="img-txt">
+          <div class="img-layer"></div>
+          <h1>We understand you and your business, We have the right solutions for you.</h1>
+          <img src="https://static.pexels.com/photos/257897/pexels-photo-257897.jpeg" />
+        </div>
+        <div class="img-txt">
+          <div class="img-layer"></div>
+          <h1>Join US Now!</h1>
+          <img src="https://static.pexels.com/photos/317383/pexels-photo-317383.jpeg" />
+        </div>
+      </div>
+    </div>
+
+
+    <div class="form-cont">
+
+      <div class="top-buttons">
+        <button class="to-signup top-active-button">
+          Sign Up
+        </button>
+        <button class="to-signin">
+          Sign In
+        </button>
+      </div>
+
+      <div style="margin-top:-10%" class="form form-signup">
+        <form id="signup" method="POST">
+          <lable>USERNAME</lable>
+          <input type="text" placeholder="Your full name">
+          <lable>Phone No.</lable>
+          <input type="text" placeholder="Your Contact No.">
+          <lable>E-MAIL</lable>
+          <input type="email" placeholder="Your e-mail">
+          <lable>PASSWORD</lable>
+          <input type="password" placeholder="Your password">
+          <lable>CONFIRM PASSWORD</lable>
+          <input type="password" placeholder="Confirm Your password">
+          <p class="terms">
+            <input type="checkbox"> I agree all statments in
+            <a href="#" class="lined-link">terms of service</a>
+          </p>
+          <a href="./../db/dash/index.html">
+            <input type="button" onclick="func1()" class="form-btn" value="Sign Up" />
+          </a>
+          <a href="#" class="lined-link to-signin-link">I'm already member</a>
+        </form>
+      </div>
+
+      <div class="form form-signin">
+        <form id="login" method="POST">
+          <lable>E-MAIL</lable>
+          <input id="email" type="email" placeholder="Your e-mail">
+          <lable>PASSWORD</lable>
+          <input type="password" placeholder="Your password">
+          <a href="./../db/dash/index.html">
+            <input type="button" onclick="func()" class="form-btn" value="Sign In" />
+          </a>
+          <a href="#" class="lined-link to-signup-link">Create new account</a>
+        </form>
+      </div>
+    </div>
+    <div class="clear-fix"></div>
+  </div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script>
+  <script>
+    function func() {
+      var email = document.getElementById("email");
+      document.getElementById("login").action = `http://localhost:8080/user/${email}`;
+
+      document.getElementById("login").submit();
+    };
+    function func1() {
+      document.getElementById("signup").action = `http://localhost:8080/user/${email}`;
+
+      document.getElementById("signup").submit();
+    };
+  </script>
+
+
+  <script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

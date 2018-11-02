@@ -1,0 +1,35 @@
+HTTrack3.48-21 launched on Fri, 24 Aug 2018 09:59:42 at http://www.themezaa.com/html/pofo/home-portfolio-metro.html
+(httrack http://www.themezaa.com/html/pofo/home-portfolio-metro.html )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+10:32:10	Warning: 	File not parsed, looks like binary: www.themezaa.com/html/pofo/fonts/glyphicons-halflings-regular.woff2
+10:32:10	Warning: 	File not parsed, looks like binary: www.themezaa.com/html/pofo/fonts/fa-brands-400.woff2
+10:32:10	Warning: 	File not parsed, looks like binary: www.themezaa.com/html/pofo/fonts/fa-regular-400.woff2
+10:32:10	Warning: 	File not parsed, looks like binary: www.themezaa.com/html/pofo/fonts/fa-solid-900.woff2
+10:32:10	Warning: 	File not parsed, looks like binary: www.themezaa.com/html/pofo/revolution/css/openhand.cur
+10:32:10	Warning: 	File not parsed, looks like binary: www.themezaa.com/html/pofo/revolution/css/closedhand.cur
+10:32:10	Error: 	"Not Found" (404) at link www.themezaa.com/html/pofo/images/arrow-down.png (from www.themezaa.com/html/pofo/css/style.css)
+10:32:10	Error: 	"Not Found" (404) at link www.themezaa.com/html/pofo/images/arrow-down-white.png (from www.themezaa.com/html/pofo/css/style.css)
+11:36:01	Warning: 	Unexpected socket error during pre-loop
+12:35:09	Error: 	"Not Found" (404) at link www.themezaa.com/html/pofo/"images/homepage-9-parallax-img5.jpg" (from www.themezaa.com/html/pofo/home-classic-corporate.html)
+12:36:23	Warning: 	Retry after error -4 (No data (connection closed)) at link www.themezaa.com/html/pofo/documentation/images/page-with-left-sidebar.png (from www.themezaa.com/html/pofo/documentation/)
+12:36:23	Error: 	"Not Found" (404) at link www.themezaa.com/html/pofo/blog-post.html (from www.themezaa.com/html/pofo/documentation/)
+12:36:23	Error: 	"Not Found" (404) at link www.themezaa.com/html/pofo/process-steps.html (from www.themezaa.com/html/pofo/documentation/)
+12:36:23	Warning: 	Retry after error -2 (Receive Time Out) at link www.themezaa.com/html/pofo/documentation/images/team-carousel.png (from www.themezaa.com/html/pofo/documentation/)
+12:36:23	Error: 	"Not Found" (404) at link www.themezaa.com/html/pofo/testimonials-carousel (from www.themezaa.com/html/pofo/documentation/)
+12:36:23	Warning: 	Retry after error -2 (Receive Time Out) at link www.themezaa.com/html/pofo/documentation/images/blog-right-sidebar.png (from www.themezaa.com/html/pofo/documentation/)
+12:36:25	Warning: 	Retry after error -4 (No data (connection closed)) at link www.themezaa.com/html/pofo/documentation/images/template-leadgen.jpg (from www.themezaa.com/html/pofo/documentation/)
+12:36:31	Warning: 	Retry after error -4 (Receive Error) at link www.themezaa.com/html/pofo/images/aside-image-2.jpg (from www.themezaa.com/html/pofo/home-blog-clean.html)
+12:36:53	Warning: 	Retry after error -2 (Connect Time Out) at link www.themezaa.com/html/pofo/images/aside-image-3.jpg (from www.themezaa.com/html/pofo/home-blog-clean.html)
+12:36:58	Error: 	"Not Found" (404) at link www.themezaa.com/html/pofo/www.wordpress.com (from www.themezaa.com/html/pofo/home-creative-designer.html)
+12:36:58	Error: 	"Not Found" (404) at link www.themezaa.com/html/pofo/blog-blog-gallery-post.html-post.html (from www.themezaa.com/html/pofo/search-result.html)
+12:36:58	Error: 	"Not Found" (404) at link www.themezaa.com/html/pofo/images/portfolio-item161jpg (from www.themezaa.com/html/pofo/portfolio-boxed-justified-gallery.html)
+12:36:58	Warning: 	File not parsed, looks like binary: www.themezaa.com/html/pofo/documentation/fonts/fontawesome-webfont.woff2?v=4.3.0
+12:36:58	Error: 	"Not Found" (404) at link www.themezaa.com/html/pofo/documentation/css/mCSB_buttons.png (from www.themezaa.com/html/pofo/documentation/css/jquery.mCustomScrollbar.css)
+
+HTTrack Website Copier/3.48-21 mirror complete in 2 hours 37 minutes 35 seconds : 1457 links scanned, 1440 files written (251906407 bytes overall) [233252277 bytes received at 24669 bytes/sec], 21739560 bytes transferred using HTTP compression in 269 files, ratio 11%, 1.5 requests per connection
+(10 errors, 14 warnings, 0 messages)

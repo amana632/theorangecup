@@ -1,0 +1,20 @@
+HTTrack3.48-21 launched on Fri, 24 Aug 2018 10:01:28 at http://jthemes.org/html/harmony-event/event-2.html
+(httrack http://jthemes.org/html/harmony-event/event-2.html )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+10:12:08	Warning: 	File not parsed, looks like binary: jthemes.org/html/harmony-event/assets/fonts/fa-brands-400.woff2
+10:12:08	Warning: 	File not parsed, looks like binary: jthemes.org/html/harmony-event/assets/fonts/fa-regular-400.woff2
+10:12:08	Warning: 	File not parsed, looks like binary: jthemes.org/html/harmony-event/assets/fonts/fa-solid-900.woff2
+10:12:08	Error: 	"Not Found" (404) at link jthemes.org/html/harmony-event/assets/css/owl.video.play.png (from jthemes.org/html/harmony-event/assets/css/owl.carousel.min.css)
+10:12:08	Error: 	"Not Found" (404) at link jthemes.org/html/harmony-event/assets/css/mCSB_buttons.png (from jthemes.org/html/harmony-event/assets/css/jquery.mCustomScrollbar.min.css)
+10:12:08	Warning: 	Retry after error -4 (No data (connection closed)) at link jthemes.org/html/harmony-event/assets/images/service/2.2.image.png (from jthemes.org/html/harmony-event/service.html)
+10:12:09	Warning: 	Retry after error -4 (No data (connection closed)) at link jthemes.org/html/harmony-event/assets/images/service/3.3.image.png (from jthemes.org/html/harmony-event/service.html)
+10:12:15	Warning: 	Retry after error -4 (No data (connection closed)) at link jthemes.org/html/harmony-event/assets/images/service/4.4.image.png (from jthemes.org/html/harmony-event/service.html)
+10:12:18	Warning: 	Retry after error -4 (No data (connection closed)) at link jthemes.org/html/harmony-event/assets/images/event/event-details-1.jpg (from jthemes.org/html/harmony-event/event-details.html)
+
+HTTrack Website Copier/3.48-21 mirror complete in 11 minutes 4 seconds : 196 links scanned, 189 files written (18910443 bytes overall) [17865939 bytes received at 26906 bytes/sec], 1607542 bytes transferred using HTTP compression in 39 files, ratio 30%, 4.0 requests per connection
+(2 errors, 7 warnings, 0 messages)
