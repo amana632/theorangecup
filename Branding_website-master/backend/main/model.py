@@ -104,3 +104,20 @@ campaign_schema = CampaignSchema()
 campaigns_schema = CampaignSchema(many=True)
 
 
+class Access_Token(db.Model):
+    __tablename__ = 'Access_Token'
+    fb_access = db.Column(db.String(255))
+    insta_access = db.Column(db.String(255))
+    email = db.Column(db.String(255),primary_key=True)
+
+    def __init__(self, fb_access, insta_access, email):
+        self.fb_access = fb_access
+        self.insta_access = insta_access
+        self.email = email
+
+class Access_TokenSchema(ma.Schema):
+    class Meta:
+        fields = ('fb_access', 'insta_access', 'email')
+
+access_token_schema = Access_TokenSchema()
+access_tokens_schema = Access_TokenSchema(many=True)

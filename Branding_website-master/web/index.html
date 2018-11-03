@@ -1,9 +1,3 @@
-<!--
-author: W3layouts
-author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,8 +6,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- for-mobile-apps -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="Event Registration Form Widget Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<meta name="keywords" content="" />
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<!-- //for-mobile-apps -->
@@ -24,11 +17,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //js -->
 	<!-- font-awesome-icons -->
 	<!-- //font-awesome-icons -->
-	<link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>4
+	<link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
 	<style>
 		body {
 			color: black;
 		}
+
+		.hide {
+  display: none;
+}
+
+#verify{
+
+	color: white;
+	background-color: #cd3ac1;
+	padding:10px;
+
+}
+
 	</style>
 </head>
 
@@ -39,7 +45,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="main">
 			<h1 class="w3layouts_head">UPDATE YOUR DETAILS</h1>
 			<div class="w3layouts_main_grid">
-				<form action="#" method="post" class="w3_form_post">
+				<form action="#" method="post" class="w3_form_post" style="opacity:1.0;">
 					<div class="w3_agileits_main_grid w3l_main_grid">
 						<span class="agileits_grid">
 							<label>Your Name </label>
@@ -48,29 +54,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="w3_agileits_main_grid w3l_main_grid">
 						<span class="agileits_grid">
-							<label>REFERRAL CODE </label>
+							<label>Email</label>
 							<input type="text" name="Task" placeholder="Your Email" required="">
 						</span>
 					</div>
 					<div class="w3_agileits_main_grid w3l_main_grid">
-						<span class="agileits_grid">
-							<label>Phone Number </label>
-							<input type="text" name="Task" placeholder="Phone Number" required="">
-						</span>
-					</div>
-					<div class="w3_agileits_main_grid w3l_main_grid">
-						<span class="agileits_grid">
-							<label>Are You In College? </label>
-							<select name="country">
-								<option value="none" selected="" disabled="">Select numbers</option>
-								<option value="Ph">50</option>
-								<option value="Po">100</option>
-								<option value="So">200</option>
-								<option value="Sp">500</option>
-								<option value="Sw">1000</option>
-							</select>
-						</span>
-					</div>
+							<span class="agileits_grid">
+								<label>REFERRAL CODE </label>
+								<input type="text" name="Task" placeholder="Referal Code" required="">
+							</span>
+						</div>
+
+			
 					<div class="agileits_w3layouts_main_grid w3ls_main_grid">
 						<span class="agileinfo_grid">
 							<label>DATE OF BIRTH</label>
@@ -112,9 +107,56 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="clear"></div>
 							</div>
 						</div>
+
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+								<span class="agileits_grid">
+									<label>Phone Number </label>
+									<input type="text" name="Task" placeholder="Phone Number" required="">
+								</span>
+							</div>
+
+
+							<div class="w3_agileits_main_grid w3l_main_grid">
+								<label>Are You In College? </label>
+							<input type="radio" name="tab" value="igotnone" onclick="show1();" />
+							No
+							<input type="radio" name="tab" value="igottwo" onclick="show2();" />
+							Yes
+							<!-- <br /> -->
+							<div id="div1" class="hide">
+									<span class="agileits_grid">
+											<label>College name </label>
+											<input type="text" name="Task" placeholder="College Name" required="">
+										</span>
+										<span class="agileits_grid">
+												<label>University Name </label>
+												<input type="text" name="Task" placeholder="University Name" required="">
+											</span>
+
+											<span class="agileits_grid">
+													<label>City </label>
+													<input type="text" name="Task" placeholder="City" required="">
+												</span>
+	
+							
+							</div>
+
+							<script>function show1(){
+								document.getElementById('div1').style.display ='none';
+							  }
+							  function show2(){
+								document.getElementById('div1').style.display = 'block';
+							  }
+
+							  </script>
+
+
+
 						<div class="form-w3ls-1">
 							<div class="grid-w3layouts1">
 								<div class="w3-agile1">
+									<br>
 									<label>CHOOSE YOUR CATEGORY</label>
 									<ul>
 										<li>
@@ -140,6 +182,69 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 						</div>
+
+						<!-- <div class="w3_agileits_main_grid w3l_main_grid">
+								<span class="agileits_grid">
+									<label>Username </label>
+									<input type="text" name="Task" placeholder="Username" required="">
+								</span>
+							</div>
+ -->
+
+							<div class="w3_agileits_main_grid w3l_main_grid">
+									<span class="agileits_grid">
+										<label>Password</label>
+										<input type="text" name="Task" placeholder="Password" required="">
+									</span>
+								</div>
+
+								
+								<div class="w3_agileits_main_grid w3l_main_grid">
+										<span class="agileits_grid">
+											<label>Confirm Password</label>
+											<input type="text" name="Task" placeholder="Confirm Password" required="">
+										</span>
+									</div>
+		
+
+
+									<div class="w3_agileits_main_grid w3l_main_grid">
+											<span class="agileits_grid">
+												<label>Instagram</label>
+												<input type="text" name="Task" placeholder="Instagram" required=""><a href="#" id="verify">Verify</a>
+											</span>
+										</div>
+
+										<div class="w3_agileits_main_grid w3l_main_grid">
+												<span class="agileits_grid">
+													<label>Facebook</label>
+													<input type="text" name="Task" placeholder="Facebook" required=""><a id="verify">Verify</a>
+												</span>
+											</div>
+											<div class="w3_agileits_main_grid w3l_main_grid">
+													<span class="agileits_grid">
+														<label>Tiktok</label>
+														<input type="text" name="Task" placeholder="Tiktok" required=""><a id="verify">Verify</a>
+													</span>
+												</div>
+												<div class="w3_agileits_main_grid w3l_main_grid">
+														<span class="agileits_grid">
+															<label>Youtube</label>
+															<input type="text" name="Task" placeholder="Youtube" required=""><a id="verify">Verify</a>
+														</span>
+													</div>
+													<div class="w3_agileits_main_grid w3l_main_grid">
+															<span class="agileits_grid">
+																<label>Blogs</label>
+																<input type="text" name="Task" placeholder="Blogs" required="">
+															</span>
+														</div>
+
+
+
+
+
+						<!--FOOTER-->
 						<div class="clear"></div>
 					</div>
 					<div class="w3_main_grid">
@@ -160,9 +265,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!-- //Calendar -->
 			<div class="w3layouts_copy_right">
 				<div class="container">
-					<p>© 2017 Event Registration Form. All rights reserved | Design by
-						<a href="http://w3layouts.com">W3layouts.</a>
-					</p>
+					
 				</div>
 			</div>
 		</div>
