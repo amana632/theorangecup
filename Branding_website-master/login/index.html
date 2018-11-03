@@ -64,9 +64,9 @@
             <input type="checkbox"> I agree all statments in
             <a href="#" class="lined-link">terms of service</a>
           </p>
-          <a href="./../db/dash/index.html">
-            <input type="button" onclick="func1()" class="form-btn" value="Sign Up" />
-          </a>
+          <!-- <a href="./../db/dash/index.html"> -->
+          <input type="button" onclick="func1()" class="form-btn" value="Sign Up" />
+          <!-- </a> -->
           <a href="#" class="lined-link to-signin-link">I'm already member</a>
         </form>
       </div>
@@ -77,9 +77,7 @@
           <input id="email" type="email" placeholder="Your e-mail">
           <lable>PASSWORD</lable>
           <input type="password" placeholder="Your password">
-          <a href="./../db/dash/index.html">
-            <input type="button" onclick="func()" class="form-btn" value="Sign In" />
-          </a>
+          <input type="button" onclick="func()" class="form-btn" value="Sign In" />
           <a href="#" class="lined-link to-signup-link">Create new account</a>
         </form>
       </div>
@@ -91,14 +89,17 @@
   <script>
     function func() {
       var email = document.getElementById("email");
-      document.getElementById("login").action = `http://localhost:8080/user/${email}`;
+      document.getElementById("login").action = `http://52.205.253.59:80/user/${email}`;
 
       document.getElementById("login").submit();
+      window.location.href = "./../web/index.html"
+
     };
     function func1() {
-      document.getElementById("signup").action = `http://localhost:8080/user/${email}`;
+      document.getElementById("signup").action = `http://52.205.253.59:80/user`;
 
       document.getElementById("signup").submit();
+      window.location.href = "./../web/index.html"
     };
   </script>
 
