@@ -3,20 +3,15 @@
 
 <head>
 	<title>Event Registration Form Widget Flat Responsive Widget Template :: w3layouts</title>
-	<!-- for-mobile-apps -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="" />
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<!-- //for-mobile-apps -->
-	<!-- //custom-theme -->
+
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<!-- js -->
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-	<!-- //js -->
-	<!-- font-awesome-icons -->
-	<!-- //font-awesome-icons -->
+
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
 	<style>
 		body {
@@ -24,17 +19,16 @@
 		}
 
 		.hide {
-  display: none;
-}
+			display: none;
+		}
 
-#verify{
+		#verify {
 
-	color: white;
-	background-color: #cd3ac1;
-	padding:10px;
+			color: white;
+			background-color: #cd3ac1;
+			padding: 10px;
 
-}
-
+		}
 	</style>
 </head>
 
@@ -49,28 +43,28 @@
 					<div class="w3_agileits_main_grid w3l_main_grid">
 						<span class="agileits_grid">
 							<label>Your Name </label>
-							<input type="text" name="Task" placeholder="Your Name" required="">
+							<input type="text" id="name" name="Task" placeholder="Your Name" required="">
 						</span>
 					</div>
 					<div class="w3_agileits_main_grid w3l_main_grid">
 						<span class="agileits_grid">
 							<label>Email</label>
-							<input type="text" name="Task" placeholder="Your Email" required="">
+							<input type="text" id="emailid" name="Task" placeholder="Your Email" required="">
 						</span>
 					</div>
 					<div class="w3_agileits_main_grid w3l_main_grid">
-							<span class="agileits_grid">
-								<label>REFERRAL CODE </label>
-								<input type="text" name="Task" placeholder="Referal Code" required="">
-							</span>
-						</div>
+						<span class="agileits_grid">
+							<label>REFERRAL CODE </label>
+							<input type="text" id="referral_code" name="Task" placeholder="Referal Code" required="">
+						</span>
+					</div>
 
-			
+
 					<div class="agileits_w3layouts_main_grid w3ls_main_grid">
 						<span class="agileinfo_grid">
 							<label>DATE OF BIRTH</label>
 							<div class="agileits_w3layouts_main_gridl">
-								<input class="date" id="datepicker" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}"
+								<input class="date" id="dob" id="datepicker" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}"
 								 required="">
 							</div>
 
@@ -109,168 +103,203 @@
 						</div>
 
 
+
+
 						<div class="w3_agileits_main_grid w3l_main_grid">
-								<span class="agileits_grid">
-									<label>Phone Number </label>
-									<input type="text" name="Task" placeholder="Phone Number" required="">
-								</span>
-							</div>
-
-
-							<div class="w3_agileits_main_grid w3l_main_grid">
-								<label>Are You In College? </label>
-							<input type="radio" name="tab" value="igotnone" onclick="show1();" />
-							No
-							<input type="radio" name="tab" value="igottwo" onclick="show2();" />
-							Yes
+							<label>Are You In College? </label>
+							<input type="radio" id="in_ollege" name="tab" value="igotnone" onclick="show1();" /> No
+							<input type="radio" id="in_college" name="tab" value="igottwo" onclick="show2();" /> Yes
 							<!-- <br /> -->
 							<div id="div1" class="hide">
-									<span class="agileits_grid">
-											<label>College name </label>
-											<input type="text" name="Task" placeholder="College Name" required="">
-										</span>
-										<span class="agileits_grid">
-												<label>University Name </label>
-												<input type="text" name="Task" placeholder="University Name" required="">
-											</span>
+								<span class="agileits_grid">
+									<label>College name </label>
+									<input type="text" name="Task" id="college_name" placeholder="College Name" required="">
+								</span>
+								<span class="agileits_grid">
+									<label>University Name </label>
+									<input type="text" name="Task" id="university_name" placeholder="University Name" required="">
+								</span>
 
-											<span class="agileits_grid">
-													<label>City </label>
-													<input type="text" name="Task" placeholder="City" required="">
-												</span>
-	
-							
+								<span class="agileits_grid">
+									<label>City </label>
+									<input type="text" name="Task" id="city" placeholder="City" required="">
+								</span>
+
+
 							</div>
 
-							<script>function show1(){
-								document.getElementById('div1').style.display ='none';
-							  }
-							  function show2(){
-								document.getElementById('div1').style.display = 'block';
-							  }
+							<script>function show1() {
+									document.getElementById('div1').style.display = 'none';
+								}
+								function show2() {
+									document.getElementById('div1').style.display = 'block';
+								}
 
-							  </script>
+							</script>
 
 
 
-						<div class="form-w3ls-1">
-							<div class="grid-w3layouts1">
-								<div class="w3-agile1">
-									<br>
-									<label>CHOOSE YOUR CATEGORY</label>
-									<ul>
-										<li>
-											<input type="radio" id="d-option" name="selector2">
-											<label for="d-option">Wine</label>
-											<div class="check"></div>
-										</li>
-										<li>
-											<input type="radio" id="e-option" name="selector2">
-											<label for="e-option">Whisky</label>
-											<div class="check">
-												<div class="inside"></div>
-											</div>
-										</li>
-										<li>
-											<input type="radio" id="f-option" name="selector2">
-											<label for="f-option">beer </label>
-											<div class="check">
-												<div class="inside"></div>
-											</div>
-										</li>
-									</ul>
+							<div class="form-w3ls-1">
+								<div class="grid-w3layouts1">
+									<div class="w3-agile1">
+										<br>
+										<label>CHOOSE YOUR CATEGORY</label>
+										<ul>
+											<li>
+												<input type="radio" id="d-option" name="selector2">
+												<label for="d-option">Wine</label>
+												<div class="check"></div>
+											</li>
+											<li>
+												<input type="radio" id="e-option" name="selector2">
+												<label for="e-option">Whisky</label>
+												<div class="check">
+													<div class="inside"></div>
+												</div>
+											</li>
+											<li>
+												<input type="radio" id="f-option" name="selector2">
+												<label for="f-option">beer </label>
+												<div class="check">
+													<div class="inside"></div>
+												</div>
+											</li>
+										</ul>
+									</div>
 								</div>
 							</div>
-						</div>
-
-						<!-- <div class="w3_agileits_main_grid w3l_main_grid">
-								<span class="agileits_grid">
-									<label>Username </label>
-									<input type="text" name="Task" placeholder="Username" required="">
-								</span>
-							</div>
- -->
 
 							<div class="w3_agileits_main_grid w3l_main_grid">
-									<span class="agileits_grid">
-										<label>Password</label>
-										<input type="text" name="Task" placeholder="Password" required="">
-									</span>
-								</div>
+								<span class="agileits_grid">
+									<label>Instagram</label>
+									<input type="text" id="instagram" name="Task" placeholder="Instagram" required="">
+									<a href="#" id="verify">Verify</a>
+								</span>
+							</div>
 
-								
-								<div class="w3_agileits_main_grid w3l_main_grid">
-										<span class="agileits_grid">
-											<label>Confirm Password</label>
-											<input type="text" name="Task" placeholder="Confirm Password" required="">
-										</span>
-									</div>
-		
+							<div class="w3_agileits_main_grid w3l_main_grid">
+								<span class="agileits_grid">
+									<label>Facebook</label>
+									<input type="text" id="facebook" name="Task" placeholder="Facebook" required="">
+									<a id="verify">Verify</a>
+								</span>
+							</div>
+							<div class="w3_agileits_main_grid w3l_main_grid">
+								<span class="agileits_grid">
+									<label>Tiktok</label>
+									<input type="text" id="tiktok" name="Task" placeholder="Tiktok" required="">
+									<a id="verify">Verify</a>
+								</span>
+							</div>
+							<div class="w3_agileits_main_grid w3l_main_grid">
+								<span class="agileits_grid">
+									<label>Youtube</label>
+									<input type="text" id="youtube" name="Task" placeholder="Youtube" required="">
+									<a id="verify">Verify</a>
+								</span>
+							</div>
+							<div class="w3_agileits_main_grid w3l_main_grid">
+								<span class="agileits_grid">
+									<label>Blogs</label>
+									<input type="text" id="blogs" name="Task" placeholder="Blogs" required="">
+								</span>
+							</div>
 
-
-									<div class="w3_agileits_main_grid w3l_main_grid">
-											<span class="agileits_grid">
-												<label>Instagram</label>
-												<input type="text" name="Task" placeholder="Instagram" required=""><a href="#" id="verify">Verify</a>
-											</span>
-										</div>
-
-										<div class="w3_agileits_main_grid w3l_main_grid">
-												<span class="agileits_grid">
-													<label>Facebook</label>
-													<input type="text" name="Task" placeholder="Facebook" required=""><a id="verify">Verify</a>
-												</span>
-											</div>
-											<div class="w3_agileits_main_grid w3l_main_grid">
-													<span class="agileits_grid">
-														<label>Tiktok</label>
-														<input type="text" name="Task" placeholder="Tiktok" required=""><a id="verify">Verify</a>
-													</span>
-												</div>
-												<div class="w3_agileits_main_grid w3l_main_grid">
-														<span class="agileits_grid">
-															<label>Youtube</label>
-															<input type="text" name="Task" placeholder="Youtube" required=""><a id="verify">Verify</a>
-														</span>
-													</div>
-													<div class="w3_agileits_main_grid w3l_main_grid">
-															<span class="agileits_grid">
-																<label>Blogs</label>
-																<input type="text" name="Task" placeholder="Blogs" required="">
-															</span>
-														</div>
-
-
-
-
-
-						<!--FOOTER-->
-						<div class="clear"></div>
-					</div>
-					<div class="w3_main_grid">
-						<div class="w3_main_grid_right">
-							<input type="submit" value="Submit">
+							<div class="clear"></div>
 						</div>
-					</div>
+						<div class="w3_main_grid">
+							<div class="w3_main_grid_right">
+								<input type="submit" id="submit" value="Submit">
+							</div>
+						</div>
 				</form>
-			</div>
-			<!-- Calendar -->
-			<link rel="stylesheet" href="css/jquery-ui.css" />
-			<script src="js/jquery-ui.js"></script>
-			<script>
-				$(function () {
-					$("#datepicker").datepicker();
-				});
-			</script>
-			<!-- //Calendar -->
-			<div class="w3layouts_copy_right">
-				<div class="container">
-					
+				</div>
+				<!-- Calendar -->
+				<link rel="stylesheet" href="css/jquery-ui.css" />
+				<script src="js/jquery-ui.js"></script>
+				<script>	
+					document.querySelector('input[name="gender"]:checked').value
+
+
+					$(document).ready(function () {
+						$('#submit').click(function () {
+
+
+							var sendData1 = $('#emailid').val();
+							var sendData2 = $('#name').val();
+							var sendData3 = $('#dob').val();
+							var sendData4 = $('#gender').val();
+							var sendData5 = $('#referral_code').val();
+
+							var sendData6 = $('#in_college').val();
+							var sendData7 = $('#university_name').val();
+							var sendData8 = $('#college_name').val();
+							var sendData9 = $('#city').val();
+							var sendData10 = $('#category').val();
+							var sendData11 = $('#instagram').val();
+							var sendData12 = $('#facebook').val();
+							var sendData13 = $('#tiktok').val();
+							var sendData14 = $('#youtube').val();
+							var sendData15 = $('#blogs').val();
+
+
+
+
+							$.ajax({
+								headers: {
+									'Access-Control-Allow-Origin': '*',
+									'Access-Control-Allow-Methods': 'POST',
+									'Access-Control-Allow-Headers': 'Content-Type'
+								},
+								url: `http://52.205.253.59:80/register_user`,    //Your api url
+								type: 'POST',   //type is any HTTP method
+								contentType: "application/json",
+
+								data: JSON.stringify({
+									emailid: sendData1,
+									name: sendData2,
+									dob: sendData3,
+									gender: sendData4,
+									referral_code: sendData5,
+									in_college: sendData6,
+									university_name: sendData7,
+									college_name: sendData8,
+									city: sendData9,
+									category: sendData10,
+									instagram: sendData11,
+									facebook: sendData12,
+									tiktok: sendData13,
+									youtube: sendData14,
+									blogs: sendData15,
+								}),
+								dataType: "json",
+
+								success: function () {
+									window.location.href = "./insta/index.html"
+								}
+							});
+
+						});
+					});
+
+
+
+				</script>
+
+				<script>
+					$(function () {
+						$("#datepicker").datepicker();
+					});
+				</script>
+				<!-- //Calendar -->
+				<div class="w3layouts_copy_right">
+					<div class="container">
+
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- //footer -->
+		<!-- //footer -->
 </body>
 
 </html>

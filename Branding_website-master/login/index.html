@@ -51,13 +51,13 @@
       <div style="margin-top:-10%" class="form form-signup">
         <form id="signup" method="POST">
           <lable>USERNAME</lable>
-          <input type="text" placeholder="Your full name">
+          <input type="text" id="username" placeholder="Your full name">
           <lable>Phone No.</lable>
-          <input type="text" placeholder="Your Contact No.">
+          <input type="text" id="phone_no" placeholder="Your Contact No.">
           <lable>E-MAIL</lable>
-          <input type="email" placeholder="Your e-mail">
+          <input type="email" id="email" placeholder="Your e-mail">
           <lable>PASSWORD</lable>
-          <input type="password" placeholder="Your password">
+          <input type="password" id="password" placeholder="Your password">
           <lable>CONFIRM PASSWORD</lable>
           <input type="password" placeholder="Confirm Your password">
           <p class="terms">
@@ -65,7 +65,7 @@
             <a href="#" class="lined-link">terms of service</a>
           </p>
           <!-- <a href="./../db/dash/index.html"> -->
-          <input type="button" onclick="func1()" class="form-btn" value="Sign Up" />
+          <input type="button" id=submit class="form-btn" value="Sign Up" />
           <!-- </a> -->
           <a href="#" class="lined-link to-signin-link">I'm already member</a>
         </form>
@@ -86,7 +86,7 @@
   </div>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <script src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script>
-  <script>
+  <!-- <script>
     function func() {
       var email = document.getElementById("email");
       document.getElementById("login").action = `http://52.205.253.59:80/user/${email}`;
@@ -101,6 +101,52 @@
       document.getElementById("signup").submit();
       window.location.href = "./../web/index.html"
     };
+  </script>
+
+ -->
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+
+  <script type="text/javascript">
+
+
+    $(document).ready(function () {
+      $('#submit').click(function () {
+
+
+        var sendData1 = $('#username').val();
+        var sendData2 = $('#phone_no').val();
+        var sendData3 = $('#email').val();
+        var sendData4 = $('#password').val();
+
+
+        $.ajax({
+          headers: {
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'POST',
+            'Access-Control-Allow-Headers': 'Content-Type'
+          },
+          url: `http://52.205.253.59:80/user`,    //Your api url
+          type: 'POST',   //type is any HTTP method
+          contentType: "application/json",
+
+          data: JSON.stringify({
+            username: sendData1,
+            phone_no: sendData2,
+            email: sendData3,
+            password: sendData4,
+          }),
+          dataType: "json",
+
+          success: function () {
+            window.location.href = "./../web/index.html"
+          }
+        });
+
+      });
+    });
+
+
   </script>
 
 
